@@ -33,9 +33,9 @@
 
 
 .LAST_VERSION_FOR_MARK{
-    /* ОТКЛЮЧИТЬ В РЕЛИЗЕ */
-    /* display: none; */
-  
+    /* ОТКЛЮЧИТЬ В РЕЛИЗЕ   display: none;*/
+    display: none;
+  /* НЕ ТРОГАТЬ */
     text-align: center;
     font-family: Calibri, sans-serif;
     color:rgb(255, 0, 0);
