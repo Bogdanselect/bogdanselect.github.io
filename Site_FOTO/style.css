@@ -1,0 +1,92 @@
+/* Стилизация скроллбара в css  START */
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-track{
+    background:rgb(1, 0, 49);
+
+}
+::-webkit-scrollbar-track:hover{
+    background:rgb(172, 172, 172);
+
+}
+::-webkit-scrollbar-thumb{
+    background:rgb(0, 14, 136);
+}
+::-webkit-scrollbar-thumb:hover{
+    background:rgb(0, 255, 170);
+}
+/* Стилизация скроллбара в css  END */
+.Under_header{
+    height: 50px;
+    background:#8ea1ff;
+    animation: NameAnim_header 10s linear infinite;
+}
+@keyframes NameAnim_header{
+    0%,100%{background-color: #00188F;
+            }
+
+            50%{background-color: #001fb8;
+        }
+}
+
+h2{
+    margin:0;
+
+    padding-top: 10px;
+    font-family: sans-serif;
+    text-align: center;
+    color:#fff;
+}
+.main-downloader{
+    
+    font-size:28px;
+    background:#000E55;
+    color:white;
+    padding: 4px  133px  4px  133px;
+    border-radius: 50px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    z-index: 10;
+
+    }
+
+.main-downloader:hover{
+    background:rgb(107, 165, 0);
+    
+    /* Эффект неона ниже */
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+    cursor: url(/File/cursor/cursor_BACK.png), auto;
+}
+.main-downloader:active{
+    background:rgb(190, 190, 190);
+    transition-duration: 0s;
+
+    /* Эффект неона ниже */
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+}
+
+.main-downloader::selection {
+    color: rgb(255, 60, 0); /* Цвет текста */
+     /* background: #000;/* Цвет фона */
+}
+    @media (max-width: 520px){
+    .main-downloader{
+        padding: 15px  40px  15px  40px;
+        font-size:18px;
+        }
+    }
+    @media (max-width: 232px){
+        .main-downloader{
+            padding: 5px  5px  5px  5px;
+            font-size:18px;
+            }
+        }
+        @media (max-width: 100px){
+            .main-downloader{
+                padding: 1px  1px  1px  1px;
+                font-size:12px;
+                
+                }
+            }
+      
